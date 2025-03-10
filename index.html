@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul class="main-sidebar">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>Subscription</li>
+                <li>Tasks</li>
+                <li>Community</li>
+            </ul>
+            <ul class="options">
+                <li>Settings</li>   
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="search-bar">
+                <form action="/admin-dashboard" method="post">
+                    <input type="text" id="search">
+                </form>
+            </div>
+            <h2>Hi there,</h2>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
+        <div class="main-content">
+            <div class="article">
+                <h3>Your path</h3>
+                <div class="card">
+                    <p class="title">Introduction</p>
+                    <p>In this lesson you will have a basic understanding of the language</p>
+                </div>
+                <div class="card">
+                    <p class="title">Things to know before starting</p>
+                    <p>How is language acquired? What's the estimated time to understand the language? How can I start speaking? Input VS Output</p>
+                </div>
+                <div class="card">
+                    <p class="title">Basic grammar</p>
+                    <p>Learn the foundations of every Japanese sentence</p>
+                </div>
+                <div class="card">
+                    <p class="title">Saludations</p>
+                    <p>How should I introduce my self? How could I saludate my friends or even my boss?</p>
+                </div>
+            </div>
+            <div class="tutoring">
+                <h3>Tutoring</h3>
+                <div class="appointment">
+                    <p class="title">Class at 9:00 to 9:50am</p>
+                    <p>Amaterasu Sensei</p>
+                </div>
+            </div>
+            <div class="statistics">
+                <h3>Weekly report</h3>
+                <div class="heatmap">
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                    <button class="ht"></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © Amaterasu Academy 2025
+        </div>
+    </div>
 </body>
 </html>
