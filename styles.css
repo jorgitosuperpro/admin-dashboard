@@ -1,6 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'MyWebFont';
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: local('opensans'),
+    url(fonts/OpenSans-VariableFont_wdth,wght.ttf) format('truetype');
 }
 
 .container {
@@ -17,6 +24,9 @@
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     background-color: #FF2DF1;
+    padding: 35px;
+    font-weight: bold;
+    color: white;
 }
 
 div .sidebar h2 {
@@ -24,21 +34,120 @@ div .sidebar h2 {
 }
 
 .main-sidebar {
-    grid-row: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list {
+    display: flex;
+    gap: 5px;
+}
+
+.list li {
+    margin-top: 8px;
 }
 
 .options {
-    grid-row: 5/6;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .header {
     grid-column: 2/3;
     grid-row: 1/2;
+    position: relative;
+    -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
+    -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.header .search-bar {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    margin-left: 70px;
+    padding-top: 25px;
+    gap: 10px;
+}
+
+.header .search-bar input {
+    width: 650px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    border: 2px;
+    box-sizing: border-box;
+    background-color: #e0e6ef;
+}
+
+.header .welcome {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    gap: 50px;
+    margin-left: 70px;
+}
+
+.header .welcome img {
+    border-radius: 50%;
+}
+
+.header .profile {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    vertical-align: middle;
+    display: flex;
+    padding-top: 25px;
+    gap: 25px;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
+.header .profile .logo2 {
+    border-radius: 50%;
+}
+
+.header .profile .bell {
+    margin-top: 10px;
+}
+.header .profile p {
+    margin-top: 7px;
+    
+}
+
+.header .buttons {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+button {
+    background-color: #FF2DF1;
+    border-radius: 10px;
+    width: 200px;
+    font-family: 'MyWebFont';
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 350pxs;
+    border: 2px solid black;
+    transition-duration: 0.4s;
 }
 
 .main-content {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #e0e6ef;
 }
 
 .footer {
